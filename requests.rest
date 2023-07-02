@@ -14,8 +14,20 @@ Content-Type: application/json
 POST http://localhost:4000/login
 Content-Type: application/json
 
-
-
 {
     "username":"Jim"
+}
+
+
+### server3.js
+GET http://localhost:3000/users
+
+
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name":"Kyle",
+    "password":"password"
 }
