@@ -1,4 +1,5 @@
 /*
+    // WDS 
     npm init -y --> initialize project with default setting
 
     npm i express jsonwebtoken dotenv (.env will contain our secret token for our jwt)
@@ -10,6 +11,7 @@
 
     require('crypto').randomBytes(64).toString('hex')
 -----------------------------------------------------
+    // nn 
     setting up passport
     * npm i ejs
 */
