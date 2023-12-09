@@ -9,4 +9,7 @@
     app.use(express.json()); --> lets our app use json  from the body that gets passed up to it inside of requests
 
     require('crypto').randomBytes(64).toString('hex')
+-----------------------------------------------------
+    setting up passport
+    
 */
