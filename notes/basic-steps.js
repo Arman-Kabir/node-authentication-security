@@ -11,5 +11,5 @@
     require('crypto').randomBytes(64).toString('hex')
 -----------------------------------------------------
     setting up passport
-    
+    * npm i ejs
 */
