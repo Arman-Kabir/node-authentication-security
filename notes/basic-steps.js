@@ -12,6 +12,8 @@
     require('crypto').randomBytes(64).toString('hex')
 -----------------------------------------------------
     // nn 
-    setting up passport
     * npm i ejs
+    **setting up passport
+    npm i passport passport-google-oauth20
+    
 */
