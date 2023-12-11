@@ -8,6 +8,7 @@
 
   2. Just a few central identities(FB, G+ etc) you can use to login anywhere.
   
- * 
+  #6 Google Startegy setup
+  https://console.cloud.google.com/   --> for google api
  * 
  */
