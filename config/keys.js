@@ -7,5 +7,8 @@ module.exports = {
     },
     mongodb:{
         dbURI:'mongodb+srv://armank:armank12@cluster0.9zzafwa.mongodb.net/?retryWrites=true&w=majority'
+    },
+    session:{
+        cookieKey:'thenetninjaisawesome'
     }
 };
