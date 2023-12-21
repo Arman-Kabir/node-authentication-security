@@ -18,12 +18,6 @@ router.get('/google',passport.authenticate('google',{
 }));
 
 
-
-// (req,res)=>{
-//     // handle with passport
-//     res.send('logging in with google')
-// }
-
 // callback route for google to redirect to
 router.get('/google/redirect',passport.authenticate('google'), (req,res)=>{
     // req.user;

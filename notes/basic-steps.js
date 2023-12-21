@@ -16,5 +16,10 @@
     **setting up passport
     npm i passport passport-google-oauth20
     npm i cookie-session
+    ------there was an error- to solve -> req.session.regenerate(function(err) {->
+    npm uninstall passport
+    npm install passport@0.5
+    ------------------------
+    
     
 */
