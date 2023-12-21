@@ -4,7 +4,7 @@ const keys = require('./keys');
 const User = require('../models/User-model');
 
 passport.serializeUser((user, done) => {
-    console.log(user);
+    // console.log(user,user.id);
     done(null, user.id);
 });
 
@@ -30,7 +30,7 @@ passport.use(
                     username: profile.displayName,
                     googleId: profile.id
                 }).save().then((newUser) => {
-                    console.log('new user created' + newUser);
+                    // console.log('new user created' + newUser);
                     done(null, newUser);
                 });
             }
