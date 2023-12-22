@@ -21,22 +21,23 @@ router.get('/google',passport.authenticate('google',{
 
 // auth with facebook
 router.get('/facebook',passport.authenticate('facebook',{
-    scope:['profile']
+    // console.log(profile);
+    scope:['public_profile','email']
 }));
 
 
 // callback route for google to redirect to
 router.get('/google/redirect',passport.authenticate('google'), (req,res)=>{
     // res.send('You reached the callback uri');
-    // res.send(req.user);
-    res.redirect('/profile/');
+    res.send(req.user);
+    // res.redirect('/profile/');
 });
 
 // callback route for facebook to redirect to
 router.get('/facebook/redirect',passport.authenticate('facebook'), (req,res)=>{
-    // res.send('You reached the callback uri');
+    res.send('You reached the callback uri');
     // res.send(req.user);
-    res.redirect('/profile/');
+    // res.redirect('/profile/');
 });
 
 
