@@ -35,9 +35,9 @@ router.get('/google/redirect',passport.authenticate('google'), (req,res)=>{
 
 // callback route for facebook to redirect to
 router.get('/facebook/redirect',passport.authenticate('facebook'), (req,res)=>{
-    res.send('You reached the callback uri');
+    // res.send('You reached the callback uri');
     // res.send(req.user);
-    // res.redirect('/profile/');
+    res.redirect('/profile/');
 });
 
 
