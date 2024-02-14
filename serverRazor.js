@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 
 app.use('/',require('./routes/index'));
+app.use('/checkout',require('./routes/razorpay.js'));
 
 
 
